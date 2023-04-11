@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 
-const LeftSideSignIn = () => {
+const TopSideSignIn = () => {
   return <StyledWrapper>Board.</StyledWrapper>
 }
 
-export default LeftSideSignIn
+export default TopSideSignIn
 
 const StyledWrapper = styled.div`
   background: #000000;
@@ -17,5 +17,6 @@ const StyledWrapper = styled.div`
   font-size: 72px;
   line-height: 88px;
   color: #ffffff;
-  width: 588px;
+  width: 100%;
+  padding: 20px;
 `

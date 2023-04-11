@@ -16,7 +16,7 @@ export default FormWrapper
 
 const StyledFormWrapper = styled.div`
   padding: 30px;
-  width: 385px;
+  width: 365px;
   background: #ffffff;
   border-radius: 20px;
   display: flex;

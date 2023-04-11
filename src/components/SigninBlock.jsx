@@ -1,13 +1,19 @@
 import styled from 'styled-components'
 import { SignInWithButton, FormWrapper } from '@/components'
+import { useWindowDimensions } from '@/hooks'
 const SigninBlock = () => {
+  let { width, height } = useWindowDimensions()
+  if (width < 768) {
+    height = height - 128
+  }
+  console.log(typeof height)
   return (
     <div
       style={{
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        height: '100vh',
+        height: `${height}px`,
         justifyContent: 'center',
       }}
     >

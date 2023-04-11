@@ -1,18 +1,38 @@
-import { SigninBlock, LeftSideSignIn } from '@/components'
+import { SigninBlock, LeftSideSignIn, TopSideSignIn } from '@/components'
+import { useWindowDimensions } from '@/hooks'
 export default function Home() {
-  return (
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
-      <LeftSideSignIn />
-      <div
-        style={{
-          width: '100%',
-          display: 'flex',
-          justifyContent: 'center',
-          background: '#F5F5F5',
-        }}
-      >
-        <SigninBlock />
+  const { width } = useWindowDimensions()
+  if (width >= 768) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'row' }}>
+        <LeftSideSignIn />
+        <div
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            background: '#F5F5F5',
+          }}
+        >
+          <SigninBlock />
+        </div>
       </div>
-    </div>
-  )
+    )
+  } else {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <TopSideSignIn />
+        <div
+          style={{
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            background: '#F5F5F5',
+          }}
+        >
+          <SigninBlock />
+        </div>
+      </div>
+    )
+  }
 }

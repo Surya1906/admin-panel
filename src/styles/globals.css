@@ -1,7 +1,8 @@
 :root {
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New','Montserrat','Lato', monospace;
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', 'Montserrat', 'Lato',
+    monospace;
 }
 * {
   box-sizing: border-box;
@@ -19,4 +20,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-

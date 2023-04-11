@@ -4,7 +4,8 @@ import InputComponent from './InputComponent'
 import LeftSideSignIn from './LeftSideSignIn'
 import SigninBlock from './SigninBlock'
 import SignInWithButton from './SignInWithButton'
-LeftSideSignIn
+import TopSideSignIn from './TopSideSignIn'
+
 export {
   SigninBlock,
   SignInWithButton,
@@ -12,4 +13,5 @@ export {
   InputComponent,
   Button,
   LeftSideSignIn,
+  TopSideSignIn,
 }
