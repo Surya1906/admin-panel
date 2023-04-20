@@ -3,7 +3,6 @@ import { SearchBar } from '@/components'
 import { AlertIcon } from '@/assets'
 const DashboardHeader = (props) => {
   const { UserProfilePic } = props
-  console.log(UserProfilePic)
   return (
     <StyledHeaderWrapper>
       <StyledHeaderTitles>Dashboard</StyledHeaderTitles>

@@ -32,8 +32,7 @@ const DashboardWidgetsRow1 = () => {
         display: 'flex',
         flexDirection: 'row',
         gap: '36px',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
       }}
     >
       {no_of_cards.map((item) => (

@@ -6,7 +6,6 @@ const SigninBlock = () => {
   if (width < 768) {
     height = height - 128
   }
-  console.log(typeof height)
   return (
     <div
       style={{
